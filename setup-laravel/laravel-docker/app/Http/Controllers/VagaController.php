@@ -8,7 +8,12 @@ use App\Models\Empresa;
 
 class VagaController extends Controller
 {
-
+public function index()
+{
+    $vaga = Vaga::all(); // Exemplo de como obter todas as empresas
+    
+    return response()->json($vaga); // Retorna as empresas como JSON
+}
 public function store(Request $request)
 {
     $request->validate([

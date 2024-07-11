@@ -7,6 +7,12 @@ use App\Models\Empresa;
 
 class EmpresaController extends Controller
 {
+    public function index()
+    {
+        $empresas = Empresa::all(); // Exemplo de como obter todas as empresas
+
+        return response()->json($empresas); // Retorna as empresas como JSON
+    }
     public function store(Request $request)
     {
         $request->validate([

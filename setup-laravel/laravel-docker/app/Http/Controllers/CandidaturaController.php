@@ -6,7 +6,12 @@ use Illuminate\Http\Request;
 use App\Models\Candidatura;
 
 class CandidaturaController extends Controller
-{
+{    public function index()
+    {
+        $candidatura = Candidatura::all(); // Exemplo de como obter todas as empresas
+
+        return response()->json($candidatura); // Retorna as empresas como JSON
+    }
     public function store(Request $request)
     {
         $request->validate([

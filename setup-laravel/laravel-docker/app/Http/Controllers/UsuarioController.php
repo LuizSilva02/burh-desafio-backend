@@ -7,6 +7,12 @@ use App\Models\Usuario;
 
 class UsuarioController extends Controller
 {
+public function index()
+{
+    $usuario = Usuario::all(); // Exemplo de como obter todas as empresas
+
+    return response()->json($usuario); // Retorna as empresas como JSON
+}
 public function store(Request $request)
 {
     $request->validate([
