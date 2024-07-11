@@ -102,7 +102,7 @@ Copiar código
 
 docker-compose exec app php artisan db:seed
 
-Acesse a API através de http://localhost:8000.
+Acesse a API através de http://localhost:8080.
 
 Testes
 
