@@ -12,18 +12,27 @@ class User extends Authenticatable
     use HasFactory, Notifiable;
 
     /**
-     * The attributes that are mass assignable.
+     * Os atributos que podem ser atribuídos em massa.
      *
      * @var array<int, string>
      */
     protected $fillable = [
-        'name',
+        'nome',
         'email',
-        'password',
+        'cpf',
+        'idade',
     ];
 
     /**
-     * The attributes that should be hidden for serialization.
+     * As vagas às quais o usuário pertence
+     */
+    public function jobs()
+    {
+        return $this->belongsToMany(Job::class, 'user_job');
+    }
+
+    /**
+     * Os atributos que devem ser ocultos para serialização
      *
      * @var array<int, string>
      */
@@ -33,7 +42,7 @@ class User extends Authenticatable
     ];
 
     /**
-     * Get the attributes that should be cast.
+     * Obtém os atributos que devem ser convertidos
      *
      * @return array<string, string>
      */
