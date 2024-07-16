@@ -18,7 +18,7 @@ Tecnologias Utilizadas
 
 Estrutura do Projeto
 
-O projeto está estruturado da seguinte forma:
+## O projeto está estruturado da seguinte forma:
 
 * app/: Contém os controllers, models e outras classes relacionadas à lógica de negócios da aplicação. database/
 
@@ -32,76 +32,88 @@ O projeto está estruturado da seguinte forma:
 
 * Funcionalidades Implementadas
 
-Cadastro de Empresas e Usuários:
+# Cadastro de Empresas e Usuários:
 
-Empresas podem se cadastrar com nome, descrição, CNPJ e plano (Free ou Premium).
+* Empresas podem se cadastrar com nome, descrição, CNPJ e plano (Free ou Premium).
 
-Usuários podem se cadastrar com nome, email, CPF e idade.
+* Usuários podem se cadastrar com nome, email, CPF e idade.
 
-Gerenciamento de Vagas de Emprego:
+# Gerenciamento de Vagas de Emprego:
 
-Empresas podem criar, listar, atualizar e excluir vagas de emprego.
+* Empresas podem criar, listar, atualizar e excluir vagas de emprego.
 
-Restrições são aplicadas ao número máximo de vagas conforme o plano da empresa (Free ou Premium).
+* Restrições são aplicadas ao número máximo de vagas conforme o plano da empresa (Free ou Premium).
 
-Candidatura de Usuários às Vagas:
+# Candidatura de Usuários às Vagas:
 
-Usuários podem visualizar e se candidatar às vagas disponíveis.
+* Usuários podem visualizar e se candidatar às vagas disponíveis.
 
-Validações e Restrições:
+# Validações e Restrições:
 
-Validações são aplicadas para garantir a unicidade de CPFs e emails de usuários.
+* Validações são aplicadas para garantir a unicidade de CPFs e emails de usuários.
 
-Restrições são aplicadas para garantir a unicidade de CNPJs de empresas.
+* Restrições são aplicadas para garantir a unicidade de CNPJs de empresas.
 
-Requisitos Específicos:
+# Requisitos Específicos:
 
-Tipos específicos de vagas (PJ, CLT, Estágio) com regras diferentes para salário e horário.
+* Tipos específicos de vagas (PJ, CLT, Estágio) com regras diferentes para salário e horário.
 
-Limites de vagas para empresas baseados no plano (Free até 5 vagas, Premium até 10 vagas).
+* Limites de vagas para empresas baseados no plano (Free até 5 vagas, Premium até 10 vagas).
 
-Instalação e Execução Local
+### Instalação e Execução Local
 
-Para executar o projeto localmente, siga os passos abaixo:
+# Para executar o projeto localmente, siga os passos abaixo:
 
-Clone este repositório:
+## Clone este repositório:
 
-Copiar código
-
+***Copiar código*
+```bash
 git clone <url-do-seu-repositorio>
-
+```
+```bash
 cd nome-do-seu-projeto
+```
 
-Configure o ambiente Docker:
+# Configure o ambiente Docker:
 
-Copiar código
+*** Copiar código **
 
+```bash
 docker-compose up -d
 
-Instale as dependências do projeto:
+```
+# Instale as dependências do projeto:
 
-Copiar código
+*** Copiar código **
 
+```bash
 docker-compose exec app composer install
+```
 
-Execute as migrações do banco de dados:
+# Execute as migrações do banco de dados:
 
-Copiar código
+*** Copiar código **
 
+```bash
 docker-compose exec app php artisan migrate
+```
 
-Execute os seeders para popular o banco de dados:
+# Execute os seeders para popular o banco de dados:
 
-Copiar código
+*** Copiar código **
 
+```bash
 docker-compose exec app php artisan db:seed
+```
 
-Acesse a API através de http://localhost:8080.
+*** Acesse a API através de http://localhost:8080. **
 
-Testes
+# Testes
 
-Os testes automatizados estão localizados no diretório tests/. Eles podem ser executados usando o seguinte comando:
+# Os testes automatizados estão localizados no diretório tests/. Eles podem ser executados usando o seguinte comando:
 
-Copiar código
+*** Copiar código **
 
+```bash
 docker-compose exec app php artisan test
+```
