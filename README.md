@@ -66,7 +66,7 @@ Estrutura do Projeto
 
 ## Clone este repositório:
 
-***Copiar código*
+***Copiar código **
 ```bash
 git clone <url-do-seu-repositorio>
 ```
