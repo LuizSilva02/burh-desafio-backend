@@ -110,7 +110,7 @@ docker-compose exec app php artisan db:seed
 
 # Testes
 
-# Os testes automatizados estão localizados no diretório tests/. Eles podem ser executados usando o seguinte comando:
+## Os testes automatizados estão localizados no diretório tests/. Eles podem ser executados usando o seguinte comando:
 
 *** Copiar código **
 
