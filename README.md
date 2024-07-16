@@ -1,4 +1,4 @@
-#Projeto API de Vagas de Emprego com Laravel
+# Projeto API de Vagas de Emprego com Laravel
 
 Introdução
 
@@ -8,29 +8,29 @@ relacionadas. A API foi desenvolvida como parte de um desafio para a vaga de Des
 
 Tecnologias Utilizadas
 
-*PHP: Linguagem de programação principal.
+* PHP: Linguagem de programação principal.
 
-*Laravel: Framework PHP utilizado para desenvolvimento da API.
+* Laravel: Framework PHP utilizado para desenvolvimento da API.
 
-*MySQL: Banco de dados relacional para armazenamento de dados.
+* MySQL: Banco de dados relacional para armazenamento de dados.
 
-*Docker: Utilizado para containerização do ambiente de desenvolvimento.
+* Docker: Utilizado para containerização do ambiente de desenvolvimento.
 
 Estrutura do Projeto
 
 O projeto está estruturado da seguinte forma:
 
-*app/: Contém os controllers, models e outras classes relacionadas à lógica de negócios da aplicação. database/
+* app/: Contém os controllers, models e outras classes relacionadas à lógica de negócios da aplicação. database/
 
-*migrations/: Migrations para criação e alteração de tabelas no banco de dados.
+* migrations/: Migrations para criação e alteração de tabelas no banco de dados.
 
-*seeders/: Seeders para popular o banco de dados com dados de teste.
+* seeders/: Seeders para popular o banco de dados com dados de teste.
 
-*routes/: Define as rotas da API.
+* routes/: Define as rotas da API.
 
-*tests/: Testes automatizados para verificar o funcionamento da API.
+* tests/: Testes automatizados para verificar o funcionamento da API.
 
-*Funcionalidades Implementadas
+* Funcionalidades Implementadas
 
 Cadastro de Empresas e Usuários:
 
